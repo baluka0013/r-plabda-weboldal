@@ -1,0 +1,24 @@
+
+:root {
+    --primary-color: #003366;
+    --secondary-color: #002244;
+    --accent-color: #004488;
+}
+body{
+    background-color: var(--primary-color);
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+}
+#navbar{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+    overflow: hidden;
+}
+#navigation{
+    
+}
