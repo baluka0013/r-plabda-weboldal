@@ -1,20 +1,151 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Silkscreen:wght@400;700&display=swap" rel="stylesheet">
     <title>Röplabda</title>
+    <style>
+        .comic-neue-light {
+            font-family: "Comic Neue", cursive;
+            font-weight: 300;
+            font-style: normal;
+        }
+          
+        .comic-neue-light-italic {
+            font-family: "Comic Neue", cursive;
+            font-weight: 300;
+            font-style: italic;
+        }
+          
+        .comic-neue-regular {
+            font-family: "Comic Neue", cursive;
+            font-weight: 400;
+            font-style: normal;
+        }
+          
+        .comic-neue-regular-italic {
+            font-family: "Comic Neue", cursive;
+            font-weight: 400;
+            font-style: italic;
+        }
+          
+        .comic-neue-bold {
+            font-family: "Comic Neue", cursive;
+            font-weight: 700;
+            font-style: bold;
+        }
+          
+        .comic-neue-bold-italic {
+            font-family: "Comic Neue", cursive;
+            font-weight: 700;
+            font-style: italic;
+        }
+          
+        /* Navbar styles */
+        .navbar {
+            position: fixed;
+            top: 0;
+            right: 0; /* Added right: 0; to position the navbar to the right */
+            width: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            backdrop-filter: blur(10px);
+            padding: 10px;
+            z-index: 9999;
+            display: flex; /* Added display: flex; to enable flexbox layout */
+            justify-content: flex-end; /* Added justify-content: flex-end; to align items to the right */
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            margin-right: 10px;
+        }
+
+        /* Page content styles */
+        body {
+            margin-top: 50px; /* Adjust this value to avoid content overlap with navbar */
+        }
+
+        /* Text and image container styles */
+        .container {
+            display: flex;
+        }
+
+        .textfirst {
+            width: 45%;
+            position: fixed;
+            left: 0;
+            z-index: 1; /* Added z-index to position the text above the image */
+            margin-top: 75px;
+            margin-bottom: 10px;
+            margin-left: 10px;
+            font-size: 20px;
+        }
+
+        .textfirst h1 {
+            font-family:"Comic Neue";
+            font-size: 120px;
+        }
+
+        .image {
+            position: fixed;
+            right: 0;
+            margin-top: 70px;
+            z-index: 0; /* Added z-index to position the image behind the text */
+        }
+        .firstheader {
+            margin-bottom: 30px;
+        }
+
+        .textsecond {
+            position: fixed;
+            left: 0;
+            z-index: 1; /* Added z-index to position the text above the image */
+            margin-top: 650px;
+            margin-bottom: 10px;
+            margin-left: 10px;
+            font-size: 20px;
+        }
+    </style>
 </head>
 <body>
-    <section class="navigation">
-        <a href="page1.html">Page 1</a>
-        <a href="page2.html">Page 2</a>
-        <a href="page3.html">Page 3</a>
-        <a href="page4.html">Page 4</a>
-    </section>
+    <div class="navbar">
+        <a href="page1.html">1</a>
+        <a href="page2.html">2</a>
+        <a href="page3.html">3</a>
+        <a href="page4.html">4</a>
+    </div>
+
+    <div class="container">
+        <div class="textfirst">
+            <h1 class="firstheader">Röplabda</h1>
+            <p> Nullam id felis ultricies, dignissim sapien at, consequat mi. Praesent ultrices eros dui, sit amet consequat metus eleifend auctor. Maecenas auctor ut erat vel tempor. Nullam vitae vestibulum dui. Phasellus laoreet lacus sed elit sodales tincidunt. Donec sit amet mi id turpis tristique vulputate. Vivamus ipsum neque, molestie sed nisi eget, efficitur ultrices orci. Curabitur euismod, est quis maximus laoreet, dui tortor interdum purus, ac mattis metus risus nec nulla. Sed vestibulum, ipsum nec mattis blandit, purus leo accumsan erat, eget blandit justo nulla a tortor. Curabitur sit amet massa non lorem varius tincidunt. Maecenas in egestas tellus.</p>
+            <p>Suspendisse dictum quis enim nec porta. Proin et blandit mi, eu blandit urna. Suspendisse ac iaculis nibh, in ornare lacus. Nullam mi urna, bibendum quis blandit nec, ornare quis mauris. Duis rhoncus arcu nec tortor pulvinar, eu efficitur nunc viverra. Morbi vehicula metus purus, quis molestie ligula egestas quis. Suspendisse ac mollis urna, nec condimentum lectus. Aliquam nec feugiat ex.</p>
+           
+
+        </div>
+        <div class="textsecond">
+            <p>Nunc varius egestas metus, ut vulputate felis facilisis eget. Vestibulum interdum, sem et faucibus varius, nisi mauris venenatis mi, a mollis felis odio condimentum odio. Praesent id est sit amet lacus rutrum viverra sit amet id purus. Curabitur facilisis odio sapien, ut sollicitudin purus molestie id. Phasellus sit amet dui vel nibh efficitur lobortis. Nulla et sapien ac odio rutrum pharetra. Morbi vulputate, nunc eu suscipit tincidunt, ipsum dolor gravida turpis, in volutpat turpis nunc eu erat. Aenean suscipit semper diam rhoncus egestas. Aliquam erat volutpat. Ut dapibus eros a tellus rutrum bibendum. Quisque ornare lacus at metus facilisis, sagittis maximus orci feugiat. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vivamus posuere cursus ipsum vitae lacinia. Quisque non turpis semper, dapibus diam id, viverra mauris.</p>
+            <p>Vivamus sed nisi in justo volutpat iaculis et nec ipsum. Proin efficitur tellus dolor, eget interdum nulla mattis commodo. Quisque a metus orci. Suspendisse efficitur lobortis felis nec elementum. Sed blandit nisi a arcu euismod, et tempus tellus rutrum. Nullam quis nisi nec sapien congue mollis et efficitur urna. Nunc enim turpis, bibendum et elit at, commodo rhoncus libero. Proin at magna in lacus aliquam pharetra. Pellentesque at nulla feugiat, volutpat dui vitae, vehicula nunc. Aliquam ut odio malesuada, consectetur nunc sit amet, sagittis tortor. </p>
+            <p>Proin non mauris a massa bibendum imperdiet. Sed quis orci ac elit rhoncus rhoncus. Aenean ac sapien luctus, posuere augue nec, ornare felis. Quisque suscipit ornare magna, non placerat lorem lobortis in. Etiam non enim et felis maximus eleifend in quis ex. Ut cursus pellentesque massa, ac dictum nunc facilisis quis. Morbi vitae purus pretium, dictum leo sit amet, tempus diam. Interdum et malesuada fames ac ante ipsum primis in faucibus. Proin suscipit tincidunt quam at tempor. Aliquam est neque, varius non vestibulum vitae, pharetra et risus. Suspendisse iaculis magna vitae nisi vulputate, sed ultricies elit convallis. Donec sodales ipsum lacinia leo eleifend bibendum. Sed mi lorem, aliquam vulputate suscipit eget, mattis quis dui. Donec fringilla libero sem.</p>
+        </div>
+        <img class="image" src="hatter.jpg" alt="Image" width="50%" >
+    </div>
+    <style>
+        /* ...existing styles... */
+
+        .image {
+            position: fixed;
+            right: 0;
+            top: 0;
+            margin-top: 3%;
+        }
+    </style>
+    
     
 </body>
 </html>
-
